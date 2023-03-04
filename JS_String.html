@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write("1 way of defining an string by using STRING LITERALS<br>");
+        var str1="JAVA SCRIPT";
+        document.write(str1,"<br>");
+        document.write("2 way of defining an string by using string object<br>");
+        var str2=new String("Second Way of difining an Error javascript Java<br>");
+        document.write(str2,"<br>");
+        document.write(str1.concat(str2));
+        document.write(str1.trim());
+        document.write("<br>",str1.charAt(2));
+        document.write("<br>",str2.indexOf("Way"));
+        document.write("<br>",str2.lastIndexOf("java"));
+        document.write("<br>",str1.toLowerCase());
+        document.write("<br>",str2.toUpperCase());
+        document.write("<br>",str1.slice(0,-4));
+        document.write("<br>",str2.substring(0,3))
+        document.write("<br>",str2.split("o"));
+        document.write("<br>",str1.charCodeAt("S"));
+        document.write("<br>",str1.search(/java/i));
+        document.write("<br>",str2.match(/java/gi));
+        document.write("<br>",str1.match(/[a-i]/gi));
+        document.write("<br>",str1.replace(/Java/gi,"WEB"));
+        document.write("<br>",str2.substr(0,4));
+    </script>
+</body>
+</html>

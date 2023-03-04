@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Javascript Arrays</h1>
+    <script>
+        // var student=[1,2,4,5,68,12];
+        // document.write(student);
+        // document.writeln(typeof(student));
+        /* var student=new Object();
+           student.name="Maneesha";
+           student.age=21;
+           student.place="DMC";
+        //    document.writeln("My name is "+student.name+ "  Age "+student.age+" place "+student.place);*/
+        // function Stud(name, age, place){
+        //     this.name=name;
+        //     this.age=age;
+        //     this.place=place;
+        // }
+        // var stud= new Stud("Shanima",22,"RAM");
+        // document.writeln("My name is "+Stud.name+ "  Age "+Stud.age+" place "+Stud.place);
+        // var cars=["BMW","Audi","Honda","Toyato","Ferrari"];
+        // document.write(cars);
+        var num=[1,2,3,4];
+        document.write(num)
+        var i=0;
+        function sum(){
+        while(i<num.length){ 
+            var sum=0;
+            sum=num[i]+num[i+1];
+            i++;
+            document.write(num[i]);
+        }
+       } 
+       sum();
+    </script>
+</body>
+</html>

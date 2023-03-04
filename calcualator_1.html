@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculation program using IF ELSEIF ELSE on Javascript</h2>
+    <script>
+        const operator = prompt('Enter which operation they need to perform:+,-,*,/,%');
+        const num1 = parseFloat(prompt('Enter vaule of Number1:'));
+        const num2 = parseFloat(prompt('Enter value of Number2:'));
+        let result;
+        if(operator == '+'){
+            result=num1+num2;
+        }
+        else if(operator == '-'){
+            result=num1-num2;
+        }
+        else if(operator == '*'){
+            result=num1*num2;
+        }
+        else if(operator == '/'){
+            result=num1/num2;
+        }
+        else if(operator == '%'){
+            result=num1%num2;
+        }
+        else{
+            alert("Wrong Input");
+        }
+        window.alert("Result is: "+result);
+    </script>
+</body>
+</html>

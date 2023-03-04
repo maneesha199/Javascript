@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="DOM.css"/>
+</head>
+<body>
+    <h1 class="head1">Welcome to Document odject Model</h1>
+    <button onclick="fun()" id="butt">Click</button>
+    <button onclick="fun1()" id="butt1">Click Me!!</button>
+    <p id="para"></p>
+    <input type="button" onclick="butt2()" value="Click Here"><br>
+    <h2 id="head2"></h2><br>
+    <form>
+    <fieldset>
+        <lagend>Enter the required fields</lagend>
+    <label for="firstname">Enter Firstname:</label><br>
+    <input type="text" id="firstname" name="firstname"><br>
+    <label for="lastname">Enter Lastname:</label><br>
+    <input type="text" id="lastname" name="lastname"><br>
+    <label for="Password1">Enter Password:</label><br>
+    <input type="password" id="password1" name="password1"><br>
+    <label for="Email1">Enter Email:</label><br>
+    <input type="email" id="Email1" name="Email1"><br>
+    <label for="Gender">Gender:</label><br>
+    <input type="radio" id="Gender" name="Gender" value="Gender">Male<br>
+    <input type="radio" id="Gender" name="Gender" value="Gender">Female<br>
+    <label for="options1">Select the place:</label>
+    <select>
+        <optgroup label="Select required country">
+        <option>India</option>
+        <option>America</option>
+        <option>Landon</option>
+        <option>Africa</option>
+        </optgroup>
+        <optgroup label="Select required state">
+            <option>Andra</option>
+            <option>Karnataka</option>
+            <option>Tamil nadu</option>
+            <option>Telengana</option>
+        </optgroup>
+    </select><br>
+    <label for="Hobbys">Select Habbies:</label><br>
+    <input type="checkbox" id="Hobbys" value="Habbys">Cricket<br>
+    <input type="checkbox" id="Hobbys" value="Hobbys">Reading<br>
+    <input type="checkbox" id="Hobbys" value="Hobbys">Singing<br>
+    <input type="checkbox" id="Hobbys" value="Hobbys">Writing<br>
+    Enter your Address:<br>
+    <textarea rows="2" cols="16"></textarea>
+    <input type="submit" id="submit1" value="Click Here to Submit">
+    </fieldset>
+     </form><br>
+     <iframe src="https://www.javatpoint.com/html-iframes" height="20%" width="40%"></iframe>
+    <script>
+        var btn=document.getElementsById(butt);
+        function fun1() 
+         {  
+            document.getElementById("para").innerHTML = "Hello World" + "<br>" + "Welcome to the  javaTpoint.com";  
+         }
+        function fun(){
+            var value1=confirm("Are you okay");   
+            if(value1==true){
+                alert("Ok");
+            }
+            else{
+                alert("No");
+            }
+         }
+         var btn_head=document.getElementById("butt2");
+         function butt2(){
+            document.getElementById("head2").innerHTML="Welcome to Document Object Model";
+        }
+    </script>
+</body>
+</html>

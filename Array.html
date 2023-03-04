@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link type="text/javascript" href="Array.js">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning Arrays</h2>
+    <script>
+        var arr=[1,2,3,8,9,12,56,78];
+        for(var i=0;i<arr.length;i++){
+        document.write(arr[i]+"<br>");
+        }
+        document.write("By using instance of an Array"+"<br>");
+        var arr1=new Array();
+        arr1[0]=4;
+        arr1[1]=5;
+        arr1[2]=6;
+        for(num=0;num<arr1.length;num++){
+                    document.write(arr1[num]+"<br>");
+                }
+        document.write("By creating an array constructure"+"<br>");
+        var arr2=new Array("Manisha","Shanima","Nisha");
+        for(var j=0;j<arr2.length;j++){
+            document.write(arr2[j]+"<br>");
+        }
+        
+        document.write(arr.shift()+"<br>");
+        document.write(arr.unshift()+"<br>");
+        document.write(arr.sort()+"<br>");
+        document.write(arr.push(100)+"<br>");
+        document.write(arr.pop()+"<br>");
+        document.write(arr.reverse()+"<br>");
+        document.write("Array Concatination method:",arr1.concat(arr2));
+        document.write("<br>IndexOf <br>",arr2.indexOf("Nisha"));
+    </script>
+</body>
+</html>

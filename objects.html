@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning Ways of creating Objects</h2>
+    <script>
+        // var stu={Name:"Mani",id:22,place:"DMC"};
+        // document.write(stu.Name+"<br>",stu.id+"<br>",stu.place+"<br>");
+        // var stu1=new Object()
+        // stu1.name="Shanima";
+        // stu1.sid=28;
+        // stu1.country="India";
+        // document.write(stu1.name+"<br>",stu1.sid+"<br>",stu1.country+"<br>");
+        // function emp(EmName,Emid,Emplace,salary){
+        //     this.EmName=EmName;
+        //     this.Emid=Emid;
+        //     this.Emplace=Emplace;
+        //     this.salary=salary;
+        //     this.totalsalary=totalsalary;
+        //     function totalsalary(othersalary){
+        //         return this.salary=this.salary+othersalary;
+        //     }
+        // }
+        // var emp1=new emp("Nisha",20,"DMC",30000);
+        // document.write(emp1.EmName+"<br>",emp1.Emid+"<br>",emp1.Emplace+"<br>",emp1.salary+"<br>");
+        // emp1.totalsalary(10000);
+        // document.write(emp1.EmName+"<br>",emp1.Emid+"<br>",emp1.Emplace+"<br>",emp1.salary+"<br>");
+
+        const num={
+            a:1,
+            b:2,
+            c:3
+        };
+
+        const stu=Object.assign({d:55},num);
+        document.write(stu.d," ");
+        document.writeln(Object.values(num));
+        document.writeln(Object.keys(num));
+    </script>
+</body>
+</html>

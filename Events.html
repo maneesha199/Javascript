@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">Welcome to Events on Javascript</h1>
+    <p id="para"></p>
+    <input type="button" value="show" name="Show" onclick="show()">
+    <input type="button" value="hide" name="Hide" ondblclick="hide()">
+    <div id="sec1"></div>
+    <img id="img1" src="Light.jpg" style="width: 400px;">
+    <script>
+        function show(){
+            document.getElementById("img1").src="lighton.jpg";
+        }
+        function hide(){
+            document.getElementById("img1").src="Light.jpg";
+            document.getElementById("img1").style.width = "200px";  
+            document.getElementById("img1").style.height = "200px";
+        }
+        window.onload=function(){
+            document.getElementById("sec1").style.backgroundColor="red";
+            document.getElementById("sec1").style.width = "300px";  
+            document.getElementById("sec1").style.height = "300px";  
+            document.getElementById("sec1").innerHTML="This section is working by loading the whole page";
+            document.getElementById("sec1").style.margin="20px";
+            document.getElementById("sec1").style.fontWeight="bold";
+            document.getElementById("sec1").style.color="white";
+            document.getElementById("sec1").style.border="5px solid black";
+        }
+    </script>
+</body>
+</html>

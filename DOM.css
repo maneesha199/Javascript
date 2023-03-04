@@ -1,0 +1,10 @@
+.head1{
+    background-color: rgb(224, 171, 71);
+    color: rgb(243, 234, 234);
+    font-style: italic;
+}
+#butt{
+    background-color: pink;
+    border-width: 4px;
+    color: white;
+}
